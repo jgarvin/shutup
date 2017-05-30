@@ -34,7 +34,7 @@ class Uno(object):
             s = serial.Serial('/dev/ttyACM0', 921600, timeout=1)
             while True:
                 try:
-                    x = s.read(100)
+                    x = s.readline()
                     self.data_callback(x)
                 except serial.serialutil.SerialException as e:
                     print("***Disconnected***")
