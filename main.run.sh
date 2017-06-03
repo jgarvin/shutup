@@ -5,3 +5,5 @@ set -x
 
 kill -16 $(cat /tmp/.smart_cat_pid) || true
 make upload
+
+python ./shutup2.py

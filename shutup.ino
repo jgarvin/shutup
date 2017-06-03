@@ -6,7 +6,7 @@
 
 #include <stdlib.h>
 
-#define CHANGE_THRESHOLD 3
+#define CHANGE_THRESHOLD 1
 
 int last_sent_reading = -(CHANGE_THRESHOLD);
 
